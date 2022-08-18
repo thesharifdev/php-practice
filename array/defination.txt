@@ -1,0 +1,1 @@
+Array is a data type which is contain same kind of of multiple data at a time. We can add, delete, edit data from the array.
