@@ -1,1 +1,0 @@
-Sometimes we need to create custom data type to make easier to implement our some kind of algorithms. Like, we need some particular data for student. In that case, we can wrap up with some data like, student name, id, class and so on. After that everywhere we can use the Student data type.
