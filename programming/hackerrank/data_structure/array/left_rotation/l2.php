@@ -1,20 +1,28 @@
 <?php
-function rotateLeft($d, $arr) {
-    $counter = 0;
-    $ct =1;
-   $arr_len = count($arr);
-  
-  for($i = $d; $i > 1; $i--) {
-    $rotatedElement = $arr[$counter];
-    $last_el        = $arr[$arr_len - $ct];
-
-
-    $arr[$arr_len - $ct] = $rotatedElement;
-    $arr[$counter] = $last_el;
-    $counter++;
-    $ct++;
+function processData($input) {
+  //Enter your code here
+   $S = [];
+   $lastAnswer = 0;
+   $inputArray = $input.explode("\n");
+   $N = $inputArray[0].explode(" ")[0];
+  for ( $i = 0; $i < $N; $i++) {
+    $S[i] = [];
   }
-  return $arr;
-}
 
-print_r(rotateLeft(2, [1,2,3,4,5]));
+  $inputArray.slice(1).foreach(($el) => {
+     $[$q, $x, $y] = $el.explode(" ").map($Number);
+     $seq = ($x ^ $lastAnswer) % N;
+    switch ($q) {
+      case 1:
+        $S[$seq].push(y);
+        break;
+      case 2:
+         $size = $S[$seq].length;
+         $index = y % size;
+        $lastAnswer = S[seq][index];
+        console.log($lastAnswer);
+        break;
+    }
+  });
+  return S;
+}
