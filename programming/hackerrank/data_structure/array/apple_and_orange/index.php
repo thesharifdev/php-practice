@@ -30,3 +30,4 @@ $endTime = microtime(true);
 $endMemory = memory_get_usage();
 echo "execution time: " . ($endTime - $startTime) . "\n";
 echo "memory used: " . ($endMemory - $startMemory) / (1024 * 1024) . "\n";
+
