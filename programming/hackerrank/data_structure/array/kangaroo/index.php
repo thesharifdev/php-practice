@@ -7,17 +7,15 @@ $count = 0;
 function kangaroo($x1, $v1, $x2, $v2) {
     // Write your code here
     
-    if($x1 > $x2 && $v1 > $v2){
+    if(($x1 > $x2 && $v1 > $v2) || ($x2 > $x1 && $v2 > $v1)){
         return "NO";
-    }else if($x2 > $x1 && $v2 > $v1){
-    return "NO";
     }else{
-         $start1 = $x1;
-         $start2 = $x2;
+        
         $counter = 0;
+
         while(true){
 
-            if($start1 == $start2){
+            if($x1 == $x2){
               return "YES";
               break;
             }else if($counter > 10000){
@@ -25,13 +23,21 @@ function kangaroo($x1, $v1, $x2, $v2) {
                 break;
              }
 
-        $start1 += $v1;
-        $start2 += $v2;
+        $x1 += $v1;
+        $x2 += $v2;
 
         $counter++;
     }
     }
 }
+$x1 = (int)readline('Enter the position of first Kangaroo: ');PHP_EOL;
+$v1 = (int)readline('Enter the jump value of first Kangaroo: ');PHP_EOL;
+$x2 = (int)readline('Enter the position of second Kangaroo: ');PHP_EOL;
+$v2 = (int)readline('Enter the jump value of second Kangaroo: ');PHP_EOL.PHP_EOL;
+echo "======================".PHP_EOL;
+var_dump(kangaroo($x1, $v1, $x2, $v2));PHP_EOL;
+echo "======================".PHP_EOL;
+
 
 $endTime = microtime(true);
 $endMemory = memory_get_usage();
