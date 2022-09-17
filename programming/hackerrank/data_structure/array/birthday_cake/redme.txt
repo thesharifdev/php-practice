@@ -3,7 +3,7 @@
    https://www.hackerrank.com/challenges/the-birthday-bar/problem?isFullScreen=true
 
 ### Repo
-    https://github.com/zrshishir/php-practice/blob/master/programming/hackerrank/basic/the_birth_day_bar/index.php
+    https://github.com/sharif-go/php-practice/tree/main/programming/hackerrank/data_structure/array/birthday_cake
 
 ### Status
     Accepted
