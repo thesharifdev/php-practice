@@ -1,0 +1,9 @@
+### Resources
+
+https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true
+
+### Repo
+    https://github.com/sharif-go/php-practice/tree/main/programming/hackerrank/data_structure/array/birthday_cake
+
+### Status
+    Accepted
