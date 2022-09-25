@@ -3,7 +3,7 @@ https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?is
 
 
 ### Repo
-https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/array/divisable-sum/index.php
+https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/array/breaking-best-and-worst-record/index.php
 
 ### Status
     Accepted
