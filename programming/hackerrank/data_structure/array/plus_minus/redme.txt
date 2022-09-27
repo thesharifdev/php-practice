@@ -3,6 +3,7 @@
 https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
 
 ### Repo
-https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/array/divisable-sum/index.php
+https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/array/plus_minus/index.php
+
 ### Status
     Accepted
