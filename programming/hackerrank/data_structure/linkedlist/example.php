@@ -2,8 +2,8 @@
 
 class Node {
 
-    private $data;
-    private $next_node;
+    protected $data;
+    protected $next_node;
 
     public function __construct(string $data = null){
         $this->data = $data;
@@ -11,7 +11,7 @@ class Node {
 
 }
 
-class LinkedList {
+class LinkedList extends Node {
 
     private $first_node = null;
     private $total_node = 0;
@@ -43,12 +43,18 @@ class LinkedList {
 
     public function get_node_status() {
       
-        echo "All nodes: ".$this->_totalNode.PHP_EOL;
+        echo "All nodes: ".$this->total_node.PHP_EOL;
         $currentNode = $this->first_node;
 
         while ($currentNode !== NULL) {
             echo $currentNode->data .PHP_EOL;
-            $currentNode = $currentNode->next;
+            $currentNode = $currentNode->next_node;
         }
     }
 }
+
+$BookTitles = new LinkedList();
+$BookTitles->insertNode("Node 1 data");
+$BookTitles->insertNode("Node 2 data");
+$BookTitles->insertNode("Node 3 data");
+$BookTitles->get_node_status();
