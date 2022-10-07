@@ -40,4 +40,15 @@ class LinkedList {
 
         return true;
     }
+
+    public function get_node_status() {
+      
+        echo "All nodes: ".$this->_totalNode.PHP_EOL;
+        $currentNode = $this->first_node;
+
+        while ($currentNode !== NULL) {
+            echo $currentNode->data .PHP_EOL;
+            $currentNode = $currentNode->next;
+        }
+    }
 }
