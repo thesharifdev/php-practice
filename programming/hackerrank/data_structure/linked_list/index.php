@@ -2,38 +2,67 @@
 $_fp = fopen("php://stdin", "r");
 /* Enter your code here. Read input from STDIN. Print output to STDOUT */
 
-class SinglyLinkedListNode {
+class Node {
     
-    public $data;
-    public $next;
-    
-    public function __construct($data = null){
+    public $data = null;
+    public $next = null;
+
+    public function __construct ($data = null)
+    {
         $this->data = $data;
     }
 }
 
-class LinkedList {
+class LinkedList{
     
-    public $head;
+    private $head_node = null;
+
+    public function insertNodeAtTail ( Node $data) {
+        
+        $newNode = $data;
+        
+        if ($this->head_node == null) {
+            
+            $this->head_node = $newNode;
+            
+        } else {
+            
+            $currentNode = $this->head_node;
+            
+            while ($currentNode-> next !== null) {
+                $currentNode = $currentNode->next;
+            }
+            $currentNode->next = $newNode;
+        }
+    }
+
+
+    public function displayAll(){
+        
+        $currentNode = $this->head_node;
+        
+        while($currentNode !== null){
+            
+            echo $currentNode->data;
+            $currentNode = $currentNode->next;
+        }
+    }
 }
 
-function insertNodeAtTail (LinkedList $linked_list, $data = null){
-    
-    $new_node = new SinglyLinkedListNode($data);
-    $linked_list = new $linked_list;
-    
-    if($linked_list->head == null){
-        $linked_list->head = $new_node;
-    }else{
-        $current_node = $linked_list->head;
-        while($current_node->next != null){
-            $current_node = $current_node->next;
-        }
-        
-        $current_node->next = $new_node;
-    }
-    
-    return $new_node;
+$LinkedList = new LinkedList();
+
+$input_data = [];
+
+while(! feof($_fp)){
+    $input_data[] = fgets($_fp);  
 }
+
+for($i = 1; $i < count($input_data); $i++){
+    
+    $my_node = new Node($input_data[$i]);
+    $LinkedList->insertNodeAtTail($my_node);    
+}
+
+$LinkedList->displayAll();
 
 ?>
