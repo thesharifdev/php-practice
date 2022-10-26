@@ -1,0 +1,8 @@
+### Resources
+https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem?isFullScreen=true
+
+### Repo
+https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/linked_list/index.php
+
+### Status
+    Accepted
