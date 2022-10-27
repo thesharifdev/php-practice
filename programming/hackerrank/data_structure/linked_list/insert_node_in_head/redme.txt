@@ -2,7 +2,7 @@
 https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem?isFullScreen=true
 
 ### Repo
-https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/linked_list/index.php
+https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/linked_list/insert_node_in_head/index.php
 
 ### Status
     Accepted
