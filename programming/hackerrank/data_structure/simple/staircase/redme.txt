@@ -1,0 +1,9 @@
+### Resources
+
+https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+
+### Repo
+https://github.com/wpsharif/php-practice/blob/main/programming/hackerrank/data_structure/simple/pageCount/index.php
+
+### Status
+    Accepted
